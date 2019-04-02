@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
   @article = Article.find(params[:id])
   @article.update(title: params[:title], description: params[:description])
   @article.save
-  
+
   redirect_to article_path(@article)
 end
 end
